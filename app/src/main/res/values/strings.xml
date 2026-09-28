@@ -87,6 +87,12 @@
     <string name="language_lbl">Voice &amp; input language</string>
     <string name="lang_en">English (India)</string>
     <string name="lang_hi">हिन्दी</string>
+    <string name="lang_mr" translatable="false">मराठी</string>
+    <string name="lang_gu" translatable="false">ગુજરાતી</string>
+    <string name="lang_bn" translatable="false">বাংলা</string>
+    <string name="lang_ta" translatable="false">தமிழ்</string>
+    <string name="lang_te" translatable="false">తెలుగు</string>
+    <string name="lang_kn" translatable="false">ಕನ್ನಡ</string>
     <string name="planner_lbl">Planner</string>
     <string name="conf_high_lbl">Execute confidence</string>
     <string name="conf_low_lbl">Abstain confidence</string>

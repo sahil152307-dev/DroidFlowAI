@@ -1,5 +1,6 @@
 package com.droidflow.ui.screens
 
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -7,6 +8,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.lazy.LazyRow
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.verticalScroll
@@ -114,18 +117,26 @@ fun SettingsScreen(onBack: () -> Unit) {
             Column(Modifier.padding(16.dp)) {
                 Text(stringResource(R.string.language_lbl), style = MaterialTheme.typography.titleMedium)
                 Spacer(Modifier.height(8.dp))
-                Row {
-                    FilterChip(
-                        selected = languageTag == "en-IN",
-                        onClick = { scope.launch { settings.setLanguageTag("en-IN") } },
-                        label = { Text(stringResource(R.string.lang_en)) }
+                LazyRow(
+                    horizontalArrangement = Arrangement.spacedBy(8.dp)
+                ) {
+                    val languages = listOf(
+                        "en-IN" to R.string.lang_en,
+                        "hi-IN" to R.string.lang_hi,
+                        "mr-IN" to R.string.lang_mr,
+                        "gu-IN" to R.string.lang_gu,
+                        "bn-IN" to R.string.lang_bn,
+                        "ta-IN" to R.string.lang_ta,
+                        "te-IN" to R.string.lang_te,
+                        "kn-IN" to R.string.lang_kn
                     )
-                    Spacer(Modifier.padding(4.dp))
-                    FilterChip(
-                        selected = languageTag == "hi-IN",
-                        onClick = { scope.launch { settings.setLanguageTag("hi-IN") } },
-                        label = { Text(stringResource(R.string.lang_hi)) }
-                    )
+                    items(languages) { (tag, labelRes) ->
+                        FilterChip(
+                            selected = languageTag == tag,
+                            onClick = { scope.launch { settings.setLanguageTag(tag) } },
+                            label = { Text(stringResource(labelRes)) }
+                        )
+                    }
                 }
             }
         }
