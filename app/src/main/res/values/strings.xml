@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DroidFlow AI</string>
+    <string name="tagline">Tell your phone what to do.</string>
+
+    <!-- Home -->
+    <string name="input_hint">What would you like me to do?</string>
+    <string name="run_task">Run task</string>
+    <string name="suggested_tasks">Suggested tasks</string>
+    <string name="sugg_compare">Compare cab prices</string>
+    <string name="sugg_find">Find a product price</string>
+    <string name="sugg_form">Fill the registration form</string>
+    <string name="voice_unavailable">Voice recognition is not available on this device</string>
+    <string name="voice_error">Voice input failed. Please try typing.</string>
+    <string name="task_unrecognized">I couldn\'t understand that task yet. Try a suggested task.</string>
+    <string name="settings">Settings</string>
+
+    <!-- Task confirmation -->
+    <string name="your_task">Your task</string>
+    <string name="goal_lbl">Goal</string>
+    <string name="apps_lbl">Apps</string>
+    <string name="destination_lbl">Destination</string>
+    <string name="query_lbl">Product</string>
+    <string name="action_lbl">Final action</string>
+    <string name="risk_lbl">Risk level</string>
+    <string name="risk_low">Low</string>
+    <string name="risk_medium">Medium</string>
+    <string name="risk_high">High</string>
+    <string name="start_task">Start task</string>
+    <string name="edit_task">Edit task</string>
+    <string name="control_note">You stay in control — DroidFlow pauses at risk boundaries.</string>
+    <string name="no_task">No task yet. Go back and start a task.</string>
+
+    <!-- Execution -->
+    <string name="current_task">Current task</string>
+    <string name="live_banner">LIVE RUN · real device automation via AccessibilityService</string>
+    <string name="cancel_task">Cancel</string>
+    <string name="fares_collected">Collected</string>
+    <string name="comparison">Comparison</string>
+    <string name="confirm_btn">Confirm</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="phase_understanding">Understanding</string>
+    <string name="phase_observing">Observing</string>
+    <string name="phase_planning">Planning</string>
+    <string name="phase_acting">Acting</string>
+    <string name="phase_verifying">Verifying</string>
+    <string name="phase_verified">Verified</string>
+    <string name="phase_safety">Safety boundary</string>
+    <string name="phase_done">Done</string>
+
+    <!-- Result -->
+    <string name="status_completed">Task complete</string>
+    <string name="status_safety_stop">Stopped at safety boundary</string>
+    <string name="status_cancelled">Task cancelled</string>
+    <string name="safety_note_hero">Stopped before booking/payment — no purchase was made.</string>
+    <string name="metrics_label">Run metrics</string>
+    <string name="steps_lbl">Steps</string>
+    <string name="actions_lbl">Actions</string>
+    <string name="duration_lbl">Duration</string>
+    <string name="run_again">Run again</string>
+    <string name="new_task">New task</string>
+
+    <!-- Onboarding -->
+    <string name="onboarding_title">Turn touch into tasks.</string>
+    <string name="onboarding_subtitle">DroidFlow is a no-code Android agent. Describe what you want done — it observes, plans, acts, verifies and stops safely at risk boundaries.</string>
+    <string name="onboarding_a11y">Built on Android Accessibility</string>
+    <string name="onboarding_a11y_body">Android\'s accessibility system was built to empower users with disabilities. DroidFlow uses the very same technology as a no-code automation layer — so anyone can run tasks across apps without writing code and without waiting for per-app integrations.</string>
+    <string name="perm_a11y_title">Accessibility permission</string>
+    <string name="perm_a11y_body">Reads the UI structure of the current screen and performs only the taps and typing you approve.</string>
+    <string name="perm_mic_title">Microphone</string>
+    <string name="perm_mic_body">For voice tasks. Speech recognition runs on your device.</string>
+    <string name="perm_net_title">Internet</string>
+    <string name="perm_net_body">Connects to the Gemini AI planner — you provide your own API key.</string>
+    <string name="perm_capture_title">Screen capture (later phase)</string>
+    <string name="perm_capture_body">Optional visual fallback where accessibility data is insufficient. Secure screens are never bypassed.</string>
+    <string name="restricted_title">Android 13+ note: \'Restricted settings\'</string>
+    <string name="restricted_body">1. Settings → Apps → DroidFlow\n2. Tap ⋮ → Allow restricted settings\n3. Then enable the service below</string>
+    <string name="enable_a11y_btn">Enable accessibility service</string>
+    <string name="a11y_status_on">Accessibility service: enabled</string>
+    <string name="a11y_status_off">Accessibility service: not enabled yet</string>
+    <string name="get_started">Get started</string>
+
+    <!-- Settings -->
+    <string name="settings_title">Settings</string>
+    <string name="api_key_lbl">Gemini API key</string>
+    <string name="api_key_help">Stored only on this device. Get a free key at aistudio.google.com.</string>
+    <string name="language_lbl">Voice &amp; input language</string>
+    <string name="lang_en">English (India)</string>
+    <string name="lang_hi">हिन्दी</string>
+    <string name="planner_lbl">Planner</string>
+    <string name="conf_high_lbl">Execute confidence</string>
+    <string name="conf_low_lbl">Abstain confidence</string>
+    <string name="max_steps_lbl">Max steps</string>
+    <string name="about_lbl">About DroidFlow</string>
+    <string name="about_body">DroidFlow observes, plans, acts, verifies and recovers — and stops when confidence or safety requirements are not met. The AI never controls the phone directly: it proposes one action at a time, and validation, safety and verification decide whether it happens.</string>
+
+    <!-- Accessibility service -->
+    <string name="accessibility_service_label">DroidFlow Agent</string>
+    <string name="accessibility_service_description">DroidFlow reads the current screen to understand UI elements and perform the actions you approve. It never bypasses secure screens and pauses at high-risk steps.</string>
+
+    <!-- UI Inspector (Phase 2 dev tool) -->
+    <string name="dev_inspector">UI Inspector (dev)</string>
+    <string name="inspector_title">UI Inspector</string>
+    <string name="inspector_sub">Live accessibility view — proof the agent sees the real UI tree</string>
+    <string name="inspector_capture">Capture</string>
+    <string name="inspector_capture_now">Capture now</string>
+    <string name="inspector_capture_delayed">Capture in 6s (switch to a demo app)</string>
+    <string name="inspector_countdown">Capturing in %1$d…</string>
+    <string name="inspector_foreground">Foreground app</string>
+    <string name="inspector_snapshot">Last snapshot</string>
+    <string name="inspector_screen_guess">Screen guess</string>
+    <string name="inspector_elements">%1$d elements</string>
+    <string name="inspector_self_note">Snapshot shows the inspector itself — switch to a demo app first</string>
+    <string name="inspector_match">Semantic match test</string>
+    <string name="inspector_query_hint">Element to find, e.g. Search rides</string>
+    <string name="inspector_find">Find match</string>
+    <string name="inspector_tap_now">Tap match now</string>
+    <string name="inspector_tap_delayed">Find + tap + verify in 6s (switch to a demo app)</string>
+    <string name="inspector_no_match">No match found</string>
+    <string name="inspector_ambiguous">Ambiguous — top candidates too close</string>
+    <string name="inspector_matched">Matched: %1$s (score %2$s)</string>
+    <string name="inspector_back">Back (global)</string>
+    <string name="inspector_home">Home (global)</string>
+    <string name="inspector_log">Event log</string>
+    <string name="inspector_enable">Enable service</string>
+    <string name="parsing_lbl">Understanding…</string>
+    <string name="planner_auto">Hybrid (recommended)</string>
+    <string name="planner_ai">AI-first (Gemini)</string>
+    <string name="planner_scripted">Deterministic script</string>
+    <string name="planner_mode_hint">Hybrid uses the script for demo tasks and Gemini for free-form. Without an API key everything falls back to the script automatically.</string>
+    <string name="engine_real_note">Actions are executed on the real screen — watch the other apps while this timeline updates.</string>
+</resources>

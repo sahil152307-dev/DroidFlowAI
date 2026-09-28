@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_ridenow">#00B074</color>
+    <color name="bg_swiftride">#7C3AED</color>
+    <color name="bg_mockmart">#F59E0B</color>
+    <color name="bg_quickform">#2563EB</color>
+</resources>
