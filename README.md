@@ -18,7 +18,7 @@ The **complete prototype**: every phase of the TRD is implemented and wired toge
 | Phase | Deliverable | Status |
 |---|---|---|
 | 0 | Gradle scaffold, manifests, theme, navigation, module structure | ✅ |
-| 1 | 6 UI screens + on-device voice input (EN/hi-IN) + EN/HI strings | ✅ |
+| 1 | 6 UI screens + on-device voice input (English, Hindi, Marathi, Gujarati, Bengali, Tamil, Telugu, Kannada) + localized strings | ✅ |
 | 1b | 4 mock demo apps with a live perturbation system | ✅ |
 | 2 | AccessibilityService perception: NodeExtractor, NodeMatcher, GestureDispatcher, ScreenStateDetector + UI Inspector | ✅ |
 | 3 | ActionExecutor: all 10 standardized actions, label→field association, foreground-aware launch | ✅ |
@@ -31,7 +31,7 @@ The **complete prototype**: every phase of the TRD is implemented and wired toge
 ## The agent loop (what actually runs)
 
 ```
-        ┌──────────────── user task (text or voice, EN / Hindi / Hinglish) ───────────────┐
+        ┌──────────────── user task (text or voice, Multi-language / Regional Indian) ──────┐
         │                                                                                   │
         ▼                                                                                   │
   IntentEngine (Gemini, fallback: keywords)  →  structured Task contract                   │
