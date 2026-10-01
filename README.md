@@ -122,7 +122,7 @@ demoapps/  4 mock apps + perturbation system
   Android 13+ restricted-settings workaround, troubleshooting.
 - **DEMO_SCRIPT.md** — the 4-minute judge run, line-by-line, plus Q&A ammo.
 
-## Privacy stance (for judges)
+## Privacy stance 
 
 - Screen context is processed on-device; only the compact, redacted element list is sent
   to Gemini — and only when a key is configured.
